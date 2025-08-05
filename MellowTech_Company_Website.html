@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MellowTecH Company (Pty) Ltd - REG NO:2025/457277/07</title>
+<style>
+body {
+  margin:0;
+  padding:0;
+  font-family:'Segoe UI',sans-serif;
+  color:#fff;
+  overflow-x:auto;
+  position:relative;
+}
+
+/* ✅ Darker Animated Background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #00010a, #00061a, #001433, #00010a);
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease infinite;
+  z-index: -3;
+}
+.lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    115deg,
+    rgba(0, 255, 255, 0.06) 0px,
+    rgba(0, 255, 255, 0.06) 2px,
+    transparent 4px,
+    transparent 40px
+  );
+  animation: linesMove 12s linear infinite;
+  z-index: -2;
+}
+
+/* Animations */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes linesMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-300px); }
+}
+
+.overlay {
+  background:rgba(0,0,0,0.75);
+  min-height:100vh;
+  padding:40px 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  position:relative;
+  z-index:1;
+}
+
+/* Header */
+header {text-align:left;margin-bottom:10px;display:flex;justify-content:space-between;width:100%;align-items:center;}
+h1 {color:#00ffff;font-size:42px;margin:0;text-shadow:0 0 10px #00ffff;}
+.registered {font-size:18px;color:#00ffff;vertical-align:super;}
+.regno {font-size:14px;color:#bbb;margin-left:10px;}
+h2.tagline {font-size:22px;color:#ff4d4d;font-weight:bold;margin:5px 0;}
+
+/* Navbar */
+.navbar {display:flex;gap:30px;background:rgba(20,20,20,0.9);padding:10px 20px;margin-bottom:20px;box-shadow:0 0 10px rgba(0,255,255,0.2);width:100%;}
+.navbar a {color:#fff;text-decoration:none;font-size:16px;position:relative;}
+.navbar a::after {content:'\25BC';margin-left:5px;font-size:12px;}
+.navbar a:hover {color:#00ffff;}
+.dropdown-content {display:none;padding:15px;background:rgba(30,30,30,0.9);border-radius:8px;margin-top:5px;line-height:1.5;}
+.nav-item:hover .dropdown-content {display:block;}
+
+/* Boxes */
+.box-section {width:100%;}
+.large-box {background:rgba(20,20,20,0.9);padding:20px;border-radius:10px;box-shadow:0 0 15px rgba(0,255,255,0.2);margin-bottom:20px;width:100%;}
+.equal-container {display:flex;justify-content:space-between;gap:20px;width:100%;margin-top:10px;}
+.clients-box, .contact-box {flex:1;background:rgba(30,30,30,0.9);padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,255,255,0.2);height:260px;box-sizing:border-box;}
+.clients-box h2, .contact-box h2 {color:#00ffff;margin-bottom:15px;}
+.contact-box p {font-size:15px;margin-bottom:10px;}
+.contact-box p span {color:red;}
+.contact-box a {color:#fff;text-decoration:none;}
+.social-icons {display:flex;gap:10px;margin-top:15px;}
+.social-icons a img {width:28px;height:28px;transition:transform 0.3s;}
+.social-icons a.x img {filter:drop-shadow(0 0 5px #fff) brightness(1.5);}
+.social-icons a img:hover {transform:scale(1.1);}
+
+/* Slider */
+.slider {position:relative;width:100%;overflow:hidden;margin-bottom:20px;}
+.slides {display:flex;transition:transform 0.5s ease-in-out;width:100%;}
+.slide {min-width:100%;box-sizing:border-box;padding:20px;background:rgba(20,20,20,0.9);border-radius:10px;}
+.dots {text-align:center;margin-top:10px;}
+.dots span {display:inline-block;width:10px;height:10px;background:#00ffff;border-radius:50%;margin:0 5px;cursor:pointer;}
+.active-dot {background:#ff4d4d;}
+
+/* Footer */
+footer {margin-top:30px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#777;width:100%;border-top:1px solid #222;padding-top:15px;}
+footer .links a {color:#00ffff;margin-left:5px;}
+</style>
+</head>
+<body>
+<!-- BODY OMITTED FOR BREVITY -->
+</body>
+</html>
